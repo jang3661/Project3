@@ -1,0 +1,73 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.doublejk.project3.RegisterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:background="#E8E8E8">
+        <EditText
+            android:id="@+id/register_title"
+            android:hint="맛집 이름을 적으세요."
+            android:background="@drawable/edittext_shape"
+            style="@style/CustomEditText"/>
+        <EditText
+            android:id="@+id/register_address"
+            android:hint="맛집 주소를 적으세요."
+            android:background="@drawable/edittext_shape"
+            style="@style/CustomEditText"/>
+        <EditText
+            android:id="@+id/register_number"
+            android:hint="맛집 전화번호를 적으세요"
+            android:background="@drawable/edittext_shape"
+            style="@style/CustomEditText"/>
+        <TextView
+            android:id="@+id/txtCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="글자수 : 0/500"/>
+        <EditText
+            android:id="@+id/register_content"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="top"
+            android:maxLength="500"
+            android:hint="맛집 리뷰를 적으세요."
+            android:padding="16dp"
+            android:textSize="15sp"
+            android:background="@drawable/edittext_shape"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:fitsSystemWindows="true">
+            <Button
+                android:id="@+id/beforeBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="8dp"
+                android:text="이전"
+                android:background="@drawable/edittext_shape"/>
+            <Button
+                android:id="@+id/nextBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="다음"
+                android:background="@drawable/edittext_shape"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
